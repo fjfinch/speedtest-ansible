@@ -10,11 +10,12 @@ services:
     environment:
       TZ:  "${DEVICE_TIMEZONE}"
       DISPLAY_TIMEZONE: "${DEVICE_TIMEZONE}"
+      DATETIME_FORMAT: "j M Y, H:i"
       APP_KEY: "${APP_KEY}"
       APP_URL: "http://${ANSIBLE_IP}:80"
       PUID: ${ANSIBLE_UID}
       PGID: ${ANSIBLE_GID}
-      SPEEDTEST_SCHEDULE: "0 3,15 * * *"
+      SPEEDTEST_SCHEDULE: "0 4,12,20 * * *"
       DEFAULT_CHART_RANGE: month
       PUBLIC_DASHBOARD: true
       DB_CONNECTION: sqlite
