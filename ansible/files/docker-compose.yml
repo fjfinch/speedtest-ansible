@@ -15,7 +15,7 @@ services:
       APP_URL: "http://${ANSIBLE_IP}:80"
       PUID: ${ANSIBLE_UID}
       PGID: ${ANSIBLE_GID}
-      SPEEDTEST_SCHEDULE: "0 4,12,20 * * *"
+      SPEEDTEST_SCHEDULE: "30 4,12,20 * * *"
       DEFAULT_CHART_RANGE: month
       PUBLIC_DASHBOARD: true
       DB_CONNECTION: sqlite
