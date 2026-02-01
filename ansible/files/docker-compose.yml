@@ -11,12 +11,13 @@ services:
       TZ:  "${DEVICE_TIMEZONE}"
       DISPLAY_TIMEZONE: "${DEVICE_TIMEZONE}"
       DATETIME_FORMAT: "j M Y, H:i"
+      CHART_DATETIME_FORMAT: "j M, H:i"
       APP_KEY: "${APP_KEY}"
       APP_URL: "http://${ANSIBLE_IP}:80"
       PUID: ${ANSIBLE_UID}
       PGID: ${ANSIBLE_GID}
-      SPEEDTEST_SCHEDULE: "30 4,12,20 * * *"
-      DEFAULT_CHART_RANGE: month
+      SPEEDTEST_SCHEDULE: "33 4,12,20 * * *"
+      DEFAULT_CHART_RANGE: week
       PUBLIC_DASHBOARD: true
       DB_CONNECTION: sqlite
     volumes:
