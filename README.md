@@ -1,5 +1,7 @@
-# REPO NAME
+# speedtest-ansible
 Ansible playbook for deploying a speedtest tracker container.
+
+Speedtest tracker monitors the performance and uptime of your internet connection.
 
 ## Install & setup
 To use this repo, a couple of tools are required:
@@ -24,7 +26,7 @@ ansible-galaxy collection install -r requirements.yml
 ```
 
 4 - Execute the playbook:
-> Note: notes
+> Note: first create the file `files/env/speedtest_secrets.env` with the variable *APP\_KEY=''* in it. Then generate the key with *echo -n 'base64:'; openssl rand -base64 32;*
 ```bash
 ansible-playbook main.yml -K
 ```
