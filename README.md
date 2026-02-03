@@ -1,7 +1,5 @@
 # speedtest-ansible
-Ansible playbook for deploying a speedtest tracker container.
-
-Speedtest tracker monitors the performance and uptime of your internet connection.
+Ansible playbook for deploying a speedtest tracker container. Speedtest tracker monitors the performance and uptime of your internet connection.
 
 ## Install & setup
 To use this repo, a couple of tools are required:
