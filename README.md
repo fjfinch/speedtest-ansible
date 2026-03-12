@@ -24,7 +24,7 @@ ansible-galaxy collection install -r requirements.yml
 ```
 
 4 - Execute the playbook:
-> Note: first create the file `files/env/speedtest_secrets.env` with the variable *APP\_KEY=''* in it. Then generate the key with *echo -n 'base64:'; openssl rand -base64 32;*
+> Note: first create the file `files/config_secrets.env` with the variable *APP\_KEY=''* in it. Then generate the key with *echo -n 'base64:'; openssl rand -base64 32;*
 ```bash
 ansible-playbook main.yml -K
 ```
